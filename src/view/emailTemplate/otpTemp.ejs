@@ -1,0 +1,393 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>First Premier Home Warranty</title>
+	<style type="text/css">
+		* {
+			font-family: 'verdana', sans-serif;
+		}
+
+		@media print {
+			thead {
+				display: table-header-group;
+			}
+
+			tfoot {
+				display: table-footer-group;
+			}
+
+			tr {
+				page-break-inside: avoid;
+			}
+
+			@page {
+				size: A4;
+			}
+
+			.page-break {
+				display: block;
+				page-break-after: always;
+			}
+		}
+
+		body {
+			position: relative;
+		}
+
+		body:before {
+			content: '';
+			background-color: #364a77;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			height: 17%;
+		}
+	</style>
+</head>
+
+<body style="margin:0; padding:0;background-color: #ffffff;">
+	<center>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr>
+					<td style="margin: 0; padding: 0" align="center">
+						<table border="0" cellpadding="0" cellspacing="0" style="width:700px; background-color:#fff;">
+							<tbody>
+								<tr>
+									<td style="margin: 0; padding:0;" align="center">
+										<table border="0" cellpadding="0" cellspacing="0"
+											style="width: 100%; padding: 28px 0;">
+											<tbody>
+												<tr style="background-color: #FFFFFF;">
+													<td style="text-align: center;">
+														<img src="<%= dataObj.email_imageUrl %>first-premier.png" alt="First Premier Home Warranty"
+														title="First Premier Home Warranty">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="margin:0; padding: 0; width:700px">
+										<table border="0" cellpadding="0" cellspacing="0" style="width:700px;">
+											<tbody>
+												<tr>
+													<td style="margin: 0; padding:0;background-color: #fff;"
+														align="center">
+														<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<tbody>
+																<tr style=" background: #d7952a; ">
+																	<td align="center" style="margin:0; padding: 0;">
+																		<table border="0" cellpadding="0"
+																			cellspacing="0">
+																			<tbody>
+																				<tr>
+																					<td style="padding: 18px;">
+																						<p
+																							style="color: #fff; font-size: 22px;margin: 0;font-weight: bold;font-family: 'verdana', sans-serif;">
+																							One Time Password</p>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left"
+																		style="margin:0; padding: 0; width:700px;">
+																		<table border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="padding: 40px 0px; width: 650px; margin: auto;">
+																			<tbody>
+																				<tr>
+																					<td align="left"
+																						style="margin:0; padding: 0; width:636px;">
+																						<p
+																							style="margin:0; padding: 0; color:#000; font-size: 16px;font-family: 'verdana', sans-serif;">
+																							Hello
+																							<strong>User,</strong>
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="left"
+																						style="margin:0; padding: 25px 0px 0; width:636px;">
+																						<p
+																							style="margin:0; padding: 0; color:#000; font-size: 16px; line-height: 28px;font-family: 'verdana', sans-serif;">
+																							We are committed to ensuring
+																							the security of your account
+																							with First Premier Home Warranty. To
+																							provide you with the highest
+																							level of protection, we have
+																							generated a one-time
+																							password (OTP) for your use.
+																							Please find your OTP below:
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 0px;">
+																						<table border="0"
+																							cellpadding="0"
+																							cellspacing="0"
+																							style="margin-top: 40px;width: 100%; border: 1px solid #b2b2b2; text-align: center;border-radius: 5px;overflow: hidden;">
+																							<tbody>
+																								<tr>
+																									<td>
+																										<p
+																											style="font-size: 20px; font-family: 'verdana', sans-serif;padding: 30px 0 10px;">
+																											One-Time
+																											Password
+																											(OTP)</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td>
+																										<p
+																											style="font-size: 35px; font-weight: bold;font-family: 'verdana', sans-serif;padding: 20px 0 33px;color: #d8952a;">
+																											<%= otp %>
+																										</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td style="margin: 0; padding: 10px; background: #354977;">
+																										<table border="0" cellpadding="0" cellspacing="0" style="width:100%; margin: 0; padding: 0;">
+																											<tbody>
+																												<tr>
+																													<td style="margin: 0; padding: 0; padding-right: 10px;"><img src="<%= dataObj.email_imageUrl %>warn.png" alt="warning" title="warning"></td>
+																													<td style="margin: 0; padding: 0; font-size: 14px; font-family: 'verdana', sans-serif; color: #fff;"> This OTP is valid for a single use and for a limited time.<br>It is essential for verifying your identity when logging in.</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="left"
+																						style="margin:0; padding: 0; width: 660px;">
+																						<table border="0"
+																							cellpadding="0"
+																							cellspacing="0"
+																							style="width: 660px; margin: auto; margin-top: 54px;padding: 0;">
+																							<tbody>
+																								<tr>
+																									<td
+																										style="border:1px solid #b2b2b2; padding: 30px 20px; border-radius: 5px; width: 284px;">
+																										<table
+																											border="0"
+																											cellpadding="0"
+																											cellspacing="0"
+																											style="margin: auto;">
+																											<tr>
+																												<td><img src="<%= dataObj.email_imageUrl %>scur.png"alt=""title="" />
+																												</td>
+																											</tr>
+																											<tr>
+																												<td><strong
+																														style="font-size: 18px;margin: 18px 0;display: inline-block;font-family: 'verdana', sans-serif;">Keep
+																														Your
+																														Contract</strong>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td>
+																													<p
+																														style="font-size: 16px;line-height: 1.5;font-family: 'verdana', sans-serif;">
+																														Do
+																														not
+																														share
+																														this
+																														OTP
+																														with
+																														anyone.
+																														We
+																														will
+																														never
+																														ask
+																														for
+																														your
+																														OTP.
+																													</p>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td>
+																										<p
+																											style="width: 29px;">
+																										</p>
+																									</td>
+																									<td
+																										style="border:1px solid #b2b2b2; padding: 30px 20px; border-radius: 5px; width: 284px;">
+																										<table
+																											border="0"
+																											cellpadding="0"
+																											cellspacing="0"
+																											style="margin: auto;">
+																											<tr>
+																												<td><img src="<%= dataObj.email_imageUrl %>lick_proc.png"
+																														alt=""
+																														title="" />
+																												</td>
+																											</tr>
+																											<tr>
+																												<td><strong
+																														style="font-size: 18px;margin: 18px 0;display: inline-block;font-family: 'verdana', sans-serif;">Secure
+																														Connection</strong>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td>
+																													<p
+																														style="font-size: 16px;line-height: 1.5;font-family: 'verdana', sans-serif;">
+																														Always
+																														ensure
+																														you
+																														are
+																														on
+																														our
+																														official
+																														website
+																														<a href="<%= dataObj.company_website_link %>"
+																															target="_blank"
+																															style="text-decoration: none; color: #d8952a;"><%= dataObj.company_website_link %></a>
+																														when
+																														using
+																														your
+																														OTP.
+																													</p>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table border="0"
+																							cellpadding="0"
+																							cellspacing="0"
+																							style="margin-top: 40px;width: 100%;padding: 0;">
+																							<tbody>
+																								<tr>
+																									<td>
+																										<p
+																											style="font-family: 'verdana', sans-serif;font-size: 16px;line-height: 1.8; ">
+																											If you did
+																											not initiate
+																											any action
+																											that
+																											requires an
+																											OTP from us,
+																											please
+																											contact our
+																											support team
+																											immediately
+																											at <strong><a
+																													href="mailto:<%= dataObj.company_email %>"
+																													style="color: #d8962a; text-decoration:none;"><%= dataObj.company_email %></a></strong>
+																											or call us
+																											at <strong><a
+																													href="tel:<%= dataObj.company_phone %>"
+																													style="color: #d8962a; text-decoration:none;"><%= dataObj.company_phone %></a></strong>.
+																										</p>
+																										<p
+																											style="font-family: 'verdana', sans-serif;font-size: 16px;line-height: 1.8; margin: 27px 0; font-weight: bold;">
+																											<strong>Thank
+																												you for
+																												choosing
+																												First
+																												Premier
+																												Home
+																												Warranty.</strong>
+																										</p>
+																										<p
+																											style="font-family: 'verdana', sans-serif;font-size: 16px;line-height: 1.8; margin-bottom: 40px;">
+																											We are
+																											dedicated to
+																											safeguarding
+																											your account
+																											and personal
+																											information.
+																										</p>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr> <!--Footer Section Start-->
+																					<td style="padding-top: 50px;">
+																						<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+																							<tbody>
+																								<tr>
+																									<td>
+																										<p style="font-family: 'verdana', sans-serif;margin-bottom: 0;">Sincerely,</p>
+																										<p style="margin-top: 10px; color: #d8962a;font-family: 'verdana', sans-serif; font-weight: 600;">First Premier Home Warranty</p>
+																									</td>
+																									<td style="text-align: right;">
+																										<img src="<%= dataObj.email_imageUrl %>faild_pay_icon.png"
+																											alt="First Premier Home Warranty"
+																											title="First Premier Home Warranty">
+																									</td>
+																								</tr>
+																								<!-- <tr>
+																									<td style="font-family: 'verdana', sans-serif;padding-top: 20px; color: #000;font-size: 15px;" colspan="2">
+																										<p>
+																											Email: <a href="mailto:<%= dataObj.company_email %>"
+																											   style="color: #666666;text-decoration:none;padding-right: 12px;"><%= dataObj.company_email %>
+																											   </a>	
+																										   </p>	
+																										   <p>Website: <a href="<%= dataObj.company_website_link %>" target="_blank"
+																											style="color: #666666;text-decoration:none;font-family: 'verdana', sans-serif;"><%= dataObj.company_website_link %></a></p>
+																									</td>
+																								</tr> -->
+																							</tbody>
+																						</table>
+																					</td>
+
+																				</tr><!--Footer Section End-->
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+															<tfoot width="100%">
+																<tr>
+																	<td style="padding-top: 40px;">
+																		<p
+																			style="background: #4c4c4c; text-align: center; padding: 14px 0; color: #fff; font-size: 16px;font-family: 'verdana', sans-serif;">
+																			© <%= dataObj.company_copyright_year %> <a href="#"
+																				style="color: #fff; text-decoration: none;">First
+																				Premier Home
+																				Warranty</a>. All rights reserved.</p>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+
+</html>

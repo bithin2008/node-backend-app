@@ -1,0 +1,238 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>First Premier Home Warranty</title>
+      <style type="text/css">
+         @media print {
+         thead {
+         display: table-header-group;
+         }
+         tfoot {
+         display: table-footer-group;
+         }
+         tr {
+         page-break-inside: avoid;
+         }
+         @page {
+         size: A4;
+         }
+         .page-break {
+         display: block;
+         page-break-after: always;
+         }
+         }
+      </style>
+   </head>
+   <body style="margin:0; padding: 0;background-color: #ededed;">
+      <center>
+         <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0;">
+            <tbody>
+               <tr>
+                  <td style="margin: 0; padding: 20px 0; width: 700px; background-color: #fff;" align="center">
+                     <table border="0" cellpadding="0" cellspacing="0" style="background-color: #fff; width:700px; margin: 0; padding: 0;">
+                        <tbody>
+                           <tr>
+                              <td style="margin: 0; padding: 20px 0; width:700px;" align="center">
+                                 <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding: 0;">
+                                    <tbody>
+                                       <tr>
+                                          <td style="margin: 0; padding: 0" align="left">
+                                             <img src="<%= dataObj.email_imageUrl %>first-premier.png" alt="First Premier Home Warranty" title="First Premier Home Warranty" style="width: 270px;" />
+                                          </td>
+                                          <td style="margin: 0; padding: 0" align="right">
+                                             <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding: 0;">
+                                                <tbody>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding-left: 15px;padding-bottom: 10px;">Address</td>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding: 0 10px;padding-bottom: 10px;">:</td>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding-bottom: 10px;"><%= dataObj.company_address %></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding-left: 15px;padding-bottom: 10px;">Phone</td>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding: 0 10px;padding-bottom: 10px;">:</td>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px;padding-bottom: 10px;"><a href="tel:18003881918" style="color: #000;text-decoration: none;"><%= dataObj.company_phone %></a></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding-left: 15px;">Email</td>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px; padding: 0 10px;">:</td>
+                                                      <td style="font-family: 'verdana', sans-serif;font-size: 12px;"><a href="mailto:info@firstpremierhomewarranty.com" style="color: #000;text-decoration: none;"><%= dataObj.company_email %></a></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="width:700px; margin: 0; padding: 0;" align="center">
+                                 <table border="0" cellpadding="0" cellspacing="0" style="width: 700px; margin: 0; padding: 0;">
+                                    <tr>
+                                       <td align="left" style="margin:0; padding: 0; width:700px;">
+                                          <table border="0" cellpadding="0" cellspacing="0" style="width:700px; margin:0; padding:0; border-top: 1px solid #c3c3c3;border-bottom: 1px solid #c3c3c3;">
+                                             <tbody>
+                                                <tr>
+                                                   <td style="font-size: 12px; color: #d8962a;font-family: 'verdana', sans-serif;font-weight: 600; padding:10px 0; vertical-align: middle; text-align: left;">Payment Receipt</td>
+                                                   <td style="font-size: 12px; color: #000;font-family: 'verdana', sans-serif;font-weight: 600; padding:10px 0; vertical-align: middle; text-align: center;">Plan: <span style="color: #d8952a;"><%= dataObj.plan_name %></span></td>
+                                                   <td style="font-size: 12px; color: #000;font-family: 'verdana', sans-serif;font-weight: 600; padding:10px 0; vertical-align: middle; text-align: right;">Amount: <span>$<%= dataObj.net_amount !== null && dataObj.net_amount !== undefined ? dataObj.net_amount : '0.00' %></span></td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="margin: 0; padding: 0; width:700px;" align="center">
+                                 <table border="0" cellpadding="0" cellspacing="0" style="width:100%; margin: 0; padding: 0; padding-top: 20px; padding-bottom: 20px;">
+                                    <tbody>
+                                       <tr>
+                                          <td style="width: 330px; margin: 0; padding: 0; padding-right: 20px;" align="left">
+                                             <table border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif;font-weight: 600; color: #000; font-size: 12px;padding-bottom: 10px;">Policy Holder</p>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif;font-weight: 600; color: #000; font-size: 12px;"><%= dataObj.first_name %> <%= dataObj.last_name %></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif; color: #000;font-size: 12px; padding-top:10px"><%= dataObj.mobile %></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                          <td style="width: 330px; margin: 0; padding: 0; padding-left: 20px;" align="left">
+                                             <table border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif; color: #000;font-size: 12px; font-weight: 600; padding-bottom: 10px;">Covered Property Information</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif; color: #000;font-size: 12px;"><%= dataObj.billing_address1 %>, <%= dataObj.billing_city %></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td style="font-family: 'verdana', sans-serif; color: #000;font-size: 12px; padding-top:10px"><%= dataObj.billing_state %>, <%= dataObj.billing_zip %></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" style="margin:0; padding: 0; width: 700px;">
+                     <table border="0" cellpadding="0" cellspacing="0" style="width: 700px; margin: 0; padding: 10px 0; border-bottom: 1px solid #000; border-top: 1px solid #000;">
+                        <tbody>
+                           <tr>
+                              <td align="left" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb;">Plan Type</td>
+                              <td align="right" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb; text-align:right;font-weight:600; color: #d7952a;"><%= dataObj.plan_name %></td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb;">Policy Number</td>
+                              <td align="right" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb; text-align:right;font-weight:600"><%= dataObj.policy_number %></td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb;">Term</td>
+                              <td align="right" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb; text-align:right;font-weight:600"><%= dataObj.policy_term %></td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb;">Term Duration</td>
+                              <td align="right" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb; text-align:right;font-weight:600"><%= dataObj.policy_start_date %> - <%= dataObj.expiry_with_bonus %></td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb;">Order Date</td>
+                              <td align="right" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb; text-align:right;font-weight:600"><%= dataObj.order_date %></td>
+                           </tr>
+                           <tr>
+                            <td style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb;">Service Call Fee</td>
+                            <td style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; border-bottom: 1px solid #cbcbcb; text-align:right;font-weight:600;">$<%= dataObj.pcf !== null && dataObj.pcf !== undefined ? dataObj.pcf : '0.00' %></td>
+
+                        </tr>
+                           <tr>
+                              <td align="left" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; ">Total Bill</td>
+                              <td align="right" style="padding: 8px 0;font-family: 'verdana', sans-serif;font-size: 12px; text-align:right;font-weight:600;">$<%= dataObj.net_amount !== null && dataObj.net_amount !== undefined ? dataObj.net_amount : '0.00' %></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                    <td align="left" style="margin:0; padding: 0; width: 700px;">
+                     <a href="<%= dataObj.payment_link %>" style="text-decoration: none; font-weight: bold; font-size: 17px; padding: 12px 20px; background-color: #009225; color: #fff; border-radius: 10px;display: inline-block;
+                        margin: 24px 0 30px;font-family: 'verdana', sans-serif;">PAY NOW</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" style="margin:0; padding: 15px 0; width: 700px;">
+                     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding: 0;">
+                        <tbody>
+                           <tr>
+                              <td style="margin: 0; padding: 0;">
+                                 <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0;">
+                                    <tr>
+                                       <td style="margin: 0; padding: 0;"><img src="<%= dataObj.email_imageUrl %>msg-icon.png"  alt="First Premier Home Warranty" title="First Premier Home Warranty"></td>
+                                       <td style="margin: 0; padding: 0; padding-left: 15px;">
+                                          <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0;">
+                                             <tr>
+                                                <td style="margin: 0; padding: 0; font-family: 'verdana', sans-serif; color: #000000; font-size: 12px; font-weight: 600;">Sincerely, </td>
+                                             </tr>
+                                             <tr>
+                                                <td style="margin: 0; padding: 0; padding-top: 5px; font-family: 'verdana', sans-serif; color: #d8952a; font-size: 12px; font-weight: 600;">First Premier Home Warranty, </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <!-- <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding: 0;">
+                                    <tr>
+                                       <td style="margin: 0; padding: 0; padding-top: 20px;">
+                                          <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0;">
+                                             <tr>
+                                                <td style="margin: 0; padding: 0; font-family: 'verdana', sans-serif; font-size: 12px;">
+                                                   <a href="mailto:<%= dataObj.company_email %>" style="color: #2f2f2f;  text-decoration:none;"><span style="font-weight: 600; color: #000000;">Email:</span> <%= dataObj.company_email %></a>
+                                                </td>
+                                                <td style="margin: 0; padding: 0; padding-left: 15px;; font-family: 'verdana', sans-serif; font-size: 12px;">
+                                                   <a href="tel:18003881918" style="color: #2f2f2f; text-decoration:none;"><span style="font-weight: 600; color: #000000;"> Call:</span> <%= dataObj.company_phone %></a>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table> -->
+                              </td>
+                              <td valign="top" style="text-align: right;">
+                                 <img src="<%= dataObj.email_imageUrl %>faild_pay_icon.png" width="50"  alt="First Premier Home Warranty" title="First Premier Home Warranty">
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td style="margin:0; background-color: #4c4c4c; padding: 12px 0; width: 700px;">
+                     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding: 0;">
+                        <tbody>
+                           <tr>
+                              <td align="center" style="margin: 0; padding: 0; padding-left: 15px; color: #fff; font-size: 12px; font-family: 'verdana', sans-serif;"> © <%= dataObj.company_copyright_year %> First Premier Home Warranty. All Rights Reserved.</td>
+                              <!-- <td align="right" style="margin: 0; padding: 0; padding-right: 15px; text-align: right;"><a href="<%= dataObj.company_website_link %>" target="_blank" style="color: #fff; font-size: 12px; font-family: 'verdana', sans-serif;text-decoration: none;"><%= dataObj.company_website %></a></td> -->
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+            </tfoot>
+         </table>
+      </center>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: appdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432" # Map host port 5432 to container port 5432
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodejs-app
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://appuser:secretpassword@postgres:5432/appdb
+    ports:
+      - "4000:5000" # Map host port 4000 to container port 5000
+    volumes:
+      - .:/app
+
+volumes:
+  postgres_data:

@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>First Premier Home Warranty</title>
+	<style type="text/css">
+		* {
+			font-family: 'verdana', sans-serif;
+		}
+
+		@media print {
+			thead {
+				display: table-header-group;
+			}
+
+			tfoot {
+				display: table-footer-group;
+			}
+
+			tr {
+				page-break-inside: avoid;
+			}
+
+			@page {
+				size: A4;
+			}
+
+			.page-break {
+				display: block;
+				page-break-after: always;
+			}
+		}
+		body{
+            position: relative;
+        }
+        body:before{
+            content: '';
+            background-color: #d8962a;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 17%;
+        }
+	</style>
+</head>
+
+<body style="margin:0; padding:0;background-color: #ffffff;">
+	<center>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr>
+					<td style="margin: 0; padding: 0" align="center">
+						<table border="0" cellpadding="0" cellspacing="0" style="width:700px; background-color:#fff;">
+							<tbody>
+								<tr>
+									<td style="margin: 0; padding:0;" align="center">
+										<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; padding: 28px 0;">
+											<tbody>
+												<tr style="background-color: #FFFFFF;">
+													<td style="text-align: center;">
+														<img src="<%= dataObj.email_imageUrl %>first-premier.png" alt="First Premier Home Warranty"
+															title="First Premier Home Warranty">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="margin:0; padding: 0; width:700px">
+										<table border="0" cellpadding="0" cellspacing="0" style="width:700px;">
+											<tbody>
+												<tr>
+													<td style="margin: 0; padding:0;background-color: #fff;" align="center">
+														<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<tbody>
+																<tr style=" background: #364a77; ">
+																	<td align="center" style="margin:0; padding: 0;">
+																		<table border="0" cellpadding="0" cellspacing="0">
+																			<tbody>
+																				<tr>
+																					<td style="padding: 10px;">
+																						<p style="color: #fff; font-size: 22px;margin: 0;font-weight: bold;font-family: 'verdana', sans-serif;">Refer A Friend</p>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="margin:0; padding: 0; width:756px;">
+																		<table border="0" cellpadding="0" cellspacing="0"
+																			style="padding: 40px 0px; width: 650px; margin: auto;">
+																			<tbody>
+																				
+																				<tr>
+																					<td align="left"
+																						style="margin:0; padding: 0; width:636px;">
+																						<p
+																							style="margin:0; padding: 0; color:#000; font-size: 16px; line-height: 28px;font-family: 'verdana', sans-serif;">
+																							Hi <%= dataObj.friend_name %>, <br> 
+																							it's <%= dataObj.name %> reaching out to you! I just purchased Home Warranty coverage from First Premier Home Warranty and I wanted to share that with you! They're recognized as the nations #1 provider and they offer comprehensive coverage for many of your homes systems and appliances. <br> <br> If you would like to purchase a home warranty plan, please visit their website www.firstpremierhomewarranty.com or call 1-800-388-1918, and one of their representatives will be more than happy to assist you. As my friend, you're entitled to discounted pricing which you can take advantage of! <br> <br>Additionally, if you choose to enroll, each of us will receive a $25 Amazon Gift Card!
+																						</p>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td align="left"
+																						style="margin:0; padding: 0; width:636px; padding-top: 25px;">
+																						<p
+																						style="margin:0; padding: 0; color:#000; font-size: 16px; line-height: 28px;font-family: 'verdana', sans-serif;">
+																						If you have any questions, you can respond to this email and an agent of theirs will be in touch. <br> <br>Enjoy!<br> <br>
+
+																						
+																					</p></td></tr>
+
+																					<tr>
+																						<td align="center"
+																						style="margin:0; padding: 0; width:636px; padding-top: 25px;">
+																							<a href="<%= dataObj.website_baseUrl %>/checkout" target="_blank" style="    
+																								display: inline-block; text-decoration: none; background: #d79529; color: #fff; font-size: 18px; padding: 15px 33px; border-radius: 13px; text-align: center;"><span style="font-family: 'verdana', sans-serif;">CLICK HERE TO PURCHASE POLICY</span> </a>
+																						</td>
+																					</tr>
+																				</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+															<tfoot width="100%">
+																<tr>
+																	<td style="padding-top: 40px;">
+																		<p
+																			style="background: #4c4c4c; text-align: center; padding: 14px 0; color: #fff; font-size: 16px;font-family: 'verdana', sans-serif;">
+																			© <%= dataObj.company_copyright_year %> <a href="<%= dataObj.company_website_link %>" style="color: #fff; text-decoration: none;">First Premier Home
+																				Warranty</a>. All rights reserved.</p>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+
+</html>

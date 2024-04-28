@@ -1,0 +1,279 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>First Premier Home Warranty</title>
+	<style type="text/css">
+		* {
+			font-family: 'verdana', sans-serif;
+		}
+
+		@media print {
+			thead {
+				display: table-header-group;
+			}
+
+			tfoot {
+				display: table-footer-group;
+			}
+
+			tr {
+				page-break-inside: avoid;
+			}
+
+			@page {
+				size: A4;
+			}
+
+			.page-break {
+				display: block;
+				page-break-after: always;
+			}
+		}
+		body{
+            position: relative;
+        }
+        body:before{
+            content: '';
+            background-color: #364a77;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 44%;
+        }
+	</style>
+</head>
+
+<body style="margin:0; padding:0;background-color: #ffffff;">
+	<center>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr>
+					<td style="margin: 0; padding: 0" align="center">
+						<table border="0" cellpadding="0" cellspacing="0" style="width:700px; background-color:#fff;">
+							<tbody>
+								<tr>
+									<td style="margin: 0; padding:0;" align="center">
+										<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; padding: 28px 0;">
+											<tbody>
+												<tr style="background-color: #FFFFFF;">
+													<td style="text-align: center;">
+														<img src="<%= dataObj.email_imageUrl %>first-premier.png" alt="First Premier Home Warranty"
+															title="First Premier Home Warranty">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="margin:0; padding: 0; width:700px">
+										<table border="0" cellpadding="0" cellspacing="0" style="width:700px;">
+											<tbody>
+												<tr>
+													<td style="margin: 0; padding:0;background-color: #fff;" align="center">
+														<table border="0" cellpadding="0" cellspacing="0" width="100%">
+															<tbody>
+																<tr style=" background: #21a145;">
+																	<td align="center" style="margin:0; padding: 0;">
+																		<table border="0" cellpadding="0" cellspacing="0">
+																			<tbody>
+																				<tr>
+																					<td style="padding: 10px;">
+																						<p style="color: #fff; font-size: 22px;margin: 0;font-weight: bold;font-family: 'verdana', sans-serif;">Claim Generated Successfully</p>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="margin:0; padding: 0; width:756px;">
+																		<table border="0" cellpadding="0" cellspacing="0"
+																			style="padding: 40px 0px; width: 650px; margin: auto;">
+																			<tbody>
+																				<tr>
+																					<td align="left" style="margin:0; padding: 0; width:636px;">
+																						<p
+																							style="margin:0; padding: 0; color:#000; font-size: 16px;font-family: 'verdana', sans-serif;">
+																							Hello <strong><%= dataObj.customer_name %>,</strong> </p>
+																					</td>
+																				</tr>
+																				<tr>
+                                                                                    <td>
+                                                                                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+																							<tbody>
+																								<tr>
+																									<td>
+																										<p style="font-family: 'verdana', sans-serif; font-size: 16px; line-height: 1.7;">We are reaching out to let you know that your recent claim <br>
+                                                                                                           <b> <%= dataObj.ticket_no %></b> has been successfully generated. </p>
+																									</td>
+																									<td>
+																										<img src="<%= dataObj.email_imageUrl %>suces-img.png"
+																											alt="First Premier Home Warranty"
+																											title="First Premier Home Warranty">
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+                                                                                    </td>
+																				</tr>
+																				
+																				<tr>
+																					<td align="left"
+																						style="margin:0; padding-top: 34px; width:636px;">
+																						<p style="margin:0; padding: 0; color:#000; font-size: 16px; line-height: 28px;font-family: 'verdana', sans-serif;">
+																							The claim information is provided below in this email.</p>
+																					</td>
+																				</tr>
+																				 <tr>
+																					<td>
+																						<table border="0" cellpadding="0" cellspacing="0"
+																							style="margin-top: 40px;width: 100%;">
+																							<tbody>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Ticket No:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.ticket_no %></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Policy No:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.policy_number %></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Product:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.product_name %></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Problem:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.problem_name %></td>
+																								</tr>
+																								<% if(dataObj.other_problem){ %>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Other Problem:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.other_problem %></td>
+																								</tr>
+																								<% } %>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Issue Details:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.issue_details %></td>
+																								</tr>
+																								<tr>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										Ticket Created On:</td>
+																									<td
+																										style="border-bottom: 1px solid #d5d5d5;padding: 20px 0; text-align: right; font-size: 16px; font-family: 'verdana', sans-serif;">
+																										<%= dataObj.ticket_date %></td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr> 
+																				<tr>
+																					<td>
+																						<table border="0" cellpadding="0" cellspacing="0"
+																							style="margin-top: 40px;width: 100%;">
+																							<tbody>
+																								<tr>
+																									<td>
+																										<!-- <p style="font-family: 'verdana', sans-serif;font-size: 16px;line-height: 1.8; margin-bottom: 40px;">To confirm your appointment and ensure that we can provide the service you need at your preferred date and time, the Technician will get in touch with you. At your conveniece you also can get in touch with the technician to fixup the appointment.</p> -->
+
+																										<p style="font-family: 'verdana', sans-serif;font-size: 16px;line-height: 1.8; ">
+																										If there is anything else that we can assist you with, please
+																										contact our
+																										support team at <strong><a href="mailto:claims@firstpremierhomewarranty.com" style="color: #d8962a; text-decoration:none;">claims@firstpremierhomewarranty.com</a></strong>
+																										or call us
+																										at <strong><a href="tel:<%= dataObj.company_phone %>" style="color: #d8962a; text-decoration:none;"><%= dataObj.company_phone %></a></strong>.</p>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr> <!--Footer Section Start-->
+																					<td style="padding-top: 50px;">
+																						<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+																							<tbody>
+																								<tr>
+																									<td>
+																										<p style="font-family: 'verdana', sans-serif;margin-bottom: 0;">Sincerely,</p>
+																										<p style="margin-top: 10px; color: #d8962a;font-family: 'verdana', sans-serif; font-weight: 600;">First Premier Home Warranty</p>
+																									</td>
+																									<td style="text-align: right;">
+																										<img src="<%= dataObj.email_imageUrl %>faild_pay_icon.png"
+																											alt="First Premier Home Warranty"
+																											title="First Premier Home Warranty">
+																									</td>
+																								</tr>
+																								<!-- <tr>
+																									<td style="font-family: 'verdana', sans-serif;padding-top: 20px; color: #000;font-size: 15px;" colspan="2">
+																										<p>
+																											Email: <a href="mailto:<%= dataObj.company_email %>"
+																											   style="color: #666666;text-decoration:none;padding-right: 12px;"><%= dataObj.company_email %>
+																											   </a>	
+																										   </p>	
+																										   <p>Website: <a href="<%= dataObj.company_website_link %>" target="_blank"
+																											style="color: #666666;text-decoration:none;font-family: 'verdana', sans-serif;"><%= dataObj.company_website_link %></a></p>
+																									</td>
+																								</tr> -->
+																							</tbody>
+																						</table>
+																					</td>
+
+																				</tr><!--Footer Section End-->
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+															<tfoot width="100%">
+																<tr>
+																	<td style="padding-top: 40px;">
+																		
+																		<p style="background: #4c4c4c; text-align: center; padding: 14px 0; color: #fff; font-size: 16px;font-family: 'verdana', sans-serif;">© <%= dataObj.company_copyright_year %> <a href="<%= dataObj.company_website_link %>" style="color: #fff; text-decoration: none;">First Premier Home Warranty</a>. All Rights Reserved.</p>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+
+</html>

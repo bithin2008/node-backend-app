@@ -1,0 +1,12 @@
+# Node
+/node_modules
+/src/public/org_files/*/  # This will ignore all subfolders inside org_files directory
+/Jenkinsfile
+Jenkinsfile
+.Jenkinsfile
+/.env
+/Jenkinsfile
+logs
+
+
+
